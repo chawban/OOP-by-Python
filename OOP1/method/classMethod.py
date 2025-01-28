@@ -25,11 +25,8 @@ my_dog2 = Dog(name="Pokki", age=5)
 
 
 print(my_dog.species)
-print(my_dog2.species)
-#my_dog.species ="DogDog"
-#my_dog.change_class_attribute("DogDogCLS")
-Dog.species = "DogDog chang by Class"
+print(my_dog2.species) 
+my_dog.change_class_attribute("DogDogCLS") 
 print(my_dog.species)
 print(my_dog2.species)
-print(Dog.species)
-
+ 

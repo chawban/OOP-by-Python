@@ -1,11 +1,15 @@
 class Dog:
+    
+    species = "Canine"  # Class Attribute
+    
     # Constructor ที่มี Parameters
-    def __init__(self, name, age):
+    def __init__(self, name, age, sound="Woof"):
         self.name = name  # Instance variable
-        self.age = age
+        self.age = age    # Instance variable
+        self.sound = sound    # Instance variable     
 
     def bark(self):
-        print(f"{self.name} says Woof! Woof!")
+        print(f"{self.name} ร้อง {self.sound}")
 
 # การสร้าง Object พร้อมกำหนดค่าเริ่มต้น
 my_dog = Dog(name="Buddy", age=3)
