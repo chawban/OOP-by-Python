@@ -7,7 +7,13 @@ class Person:
         self.fname = fname
         self.lname = lname
         self.birth_year = birth_year 
+        self.__full_name = self.fname+" "+ self.lname
+    
+    @property    
+    def full_name(self):   
+        return f"ชื่อ : {self.fname} นามสกุล : {self.lname}"        
         
+'''     
     @property
     def full_name(self):  # ใช้ @property เพื่อให้เรียกใช้งานเหมือน attribute
         return f"{self.fname} {self.lname}"
@@ -16,15 +22,19 @@ class Person:
     def age(self):  # คำนวณอายุอัตโนมัติจากปีเกิด
         current_year = date.today().year
         return current_year - self.birth_year
-    
+'''     
     
 
 p = Person("ทักษิณ", "รักเรียน", 1998)
 
 print(p.fname)
 print(p.lname) 
+print(p.birth_year) 
 print(p.full_name) 
-print(p.age) 
+#p.full_name = "สมศรี มาค่ะ"
+print(p.full_name) 
+
+#print(p.age) 
 
     
 #    def full_name(self):   

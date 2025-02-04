@@ -6,10 +6,22 @@ public class Employee {
 
     // Constructor
     public Employee(String name, int age) {
-        this.name = name; // Attribute ที่กำหนดค่าใน constructor
-        this.age = age;   // Attribute ที่กำหนดค่าใน constructor
-        this.bonus = null; // Attribute ที่ไม่มีค่าเริ่มต้นใน constructor
+         //xyz
     }
+
+    public Employee(String name) {
+        //mno
+    }
+
+    Employee emp1= Employee("ABC",20);
+    Employee emp2= Employee("ABC");
+    Employee emp3= Employee(20);
+
+
+        def __init__(self, name, age):
+        self._name = name  # Attribute ที่กำหนดค่าใน constructor
+        self._age = age    # Attribute ที่กำหนดค่าใน constructor
+        self._bonus = None  # Attribute ที่ไม่มีค่าเริ่มต้นใน constructor
 
     // Getter สำหรับ 'name'
     public String getName() {
