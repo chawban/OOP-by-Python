@@ -12,20 +12,21 @@ class Dog:
     def bark(self): 
         print(f"{self.name} says Woof! Woof!")
 
-    
+
 
 # การสร้าง Object พร้อมกำหนดค่าเริ่มต้น
 my_dog = Dog(name="Buddy", age=3)
 my_dog2 = Dog(name="Pokki", age=5)
 
+ 
+print(Dog.species)
 
-print(my_dog.species)
-print(my_dog2.species)
+
+
+#print(my_dog.species)
+#print(my_dog2.species)
 #my_dog.species ="DogDog"
 #my_dog.change_class_attribute("DogDogCLS")
-Dog.species = "DogDog chang by Class"
-print(my_dog.species)
-print(my_dog2.species)
-print(Dog.species)
+
 
 

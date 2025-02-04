@@ -8,7 +8,10 @@ class Circle:
     
     # แล้วเปลี่ยนได้ใหม   
 
-circle = Circle(10)
-print(circle.radius)  # Output: 10
-circle.radius = 15    # Error: AttributeError
+c1 = Circle(10)
+print(c1.radius)  # Output: 10
+#c1.radius = 15    # Error: AttributeError
  
+
+c2 = Circle(500)
+print(c2.radius)  # Output: 10
