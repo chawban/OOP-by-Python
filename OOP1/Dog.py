@@ -25,11 +25,13 @@ my_dog2 = Dog(name="Pokki", age=5)
 # 
 #Dog.species = "Mikki"  
 
-print(Dog.name)
-
+#print(Dog.name)
+my_dog2.species = "aaa"
 print(my_dog.species)
 print(my_dog2.species)
 
+print(my_dog.name)
+print(my_dog2.name)
 
 """
 my_dog.species ="DogDog"

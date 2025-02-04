@@ -17,8 +17,6 @@ class Dog:
     def change_class_attribute(cls, new_value):
         cls.species = new_value
 
-    
-
 # การสร้าง Object พร้อมกำหนดค่าเริ่มต้น
 my_dog = Dog(name="Buddy", age=3)
 my_dog2 = Dog(name="Pokki", age=5)
@@ -30,3 +28,7 @@ my_dog.change_class_attribute("DogDogCLS")
 print(my_dog.species)
 print(my_dog2.species)
  
+Dog.change_class_attribute("เปลี่ยนผ่าน Dog")
+#Dog.bark()
+print(my_dog.species)
+print(my_dog2.species)
