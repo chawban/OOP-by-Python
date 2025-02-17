@@ -6,6 +6,7 @@ public class Employee {
 
     // Constructor
     public Employee(String name, int age) {
+<<<<<<< HEAD
          //xyz
     }
 
@@ -23,6 +24,13 @@ public class Employee {
         self._age = age    # Attribute ที่กำหนดค่าใน constructor
         self._bonus = None  # Attribute ที่ไม่มีค่าเริ่มต้นใน constructor
 
+=======
+        this.name = name; // Attribute ที่กำหนดค่าใน constructor
+        this.age = age;   // Attribute ที่กำหนดค่าใน constructor
+        this.bonus = null; // Attribute ที่ไม่มีค่าเริ่มต้นใน constructor
+    }
+
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
     // Getter สำหรับ 'name'
     public String getName() {
         System.out.println("Getting name");

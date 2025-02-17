@@ -9,6 +9,10 @@ class Person:
 
 # สร้าง object จาก class
 p1 = Person("Alice")
+<<<<<<< HEAD
+=======
+
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 # เพิ่ม attribute ใหม่ใน runtime
 p1.age = 25
 p1.city = "Bangkok"
@@ -17,6 +21,7 @@ p1.city = "Bangkok"
 print(f"Name: {p1.name}")
 print(f"Age: {p1.age}")
 print(f"City: {p1.city}")
+<<<<<<< HEAD
 
 
 p2 = Person("สมหวัง")
@@ -24,3 +29,5 @@ p2 = Person("สมหวัง")
 print(f"Name: {p2.name}")
 print(f"Age: {p2.age}")
 print(f"City: {p2.city}")
+=======
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3

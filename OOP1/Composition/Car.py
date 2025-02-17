@@ -9,6 +9,7 @@ class Car:
 
     def start(self):
         print(f"{self.make} {self.model} is starting.")
+<<<<<<< HEAD
         self.engine.start1()
 
 
@@ -41,3 +42,10 @@ class radio:
     def  __init__(self, status):
         self.status = status    #  0/1
 '''
+=======
+        self.engine.start()
+
+
+car = Car("Toyota", "Camry", 200)
+car.start()
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3

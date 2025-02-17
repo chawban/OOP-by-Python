@@ -17,17 +17,27 @@ class BankAccount:
             print(f"ฝากเงินสำเร็จ! ยอดเงินปัจจุบัน: {self.__balance} บาท")
         else:
             print("จำนวนเงินที่ฝากต้องมากกว่า 0 บาท")
+<<<<<<< HEAD
             return  False
+=======
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 
     def withdraw(self, amount):
         """ เมธอดสำหรับถอนเงินจากบัญชี """
         if 0 < amount <= self.__balance:
+<<<<<<< HEAD
             self.__balance -= amount   # a-=b   a=a-b
             print(f"ถอนเงินสำเร็จ! ยอดเงินคงเหลือ: {self.__balance} บาท")
             return  True
         else:
             print("ยอดเงินไม่เพียงพอ หรือ จำนวนเงินที่ถอนต้องมากกว่า 0 บาท")
             return  False
+=======
+            self.__balance -= amount
+            print(f"ถอนเงินสำเร็จ! ยอดเงินคงเหลือ: {self.__balance} บาท")
+        else:
+            print("ยอดเงินไม่เพียงพอ หรือ จำนวนเงินที่ถอนต้องมากกว่า 0 บาท")
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 
     def get_balance(self):
         """ เมธอดสำหรับตรวจสอบยอดเงินคงเหลือ """
@@ -42,6 +52,7 @@ class BankAccount:
         """ แสดงยอดเงินคงเหลือ โดยใช้ get_balance() """
         print(f"ยอดเงินคงเหลือ: {self.get_balance()} บาท")
 
+<<<<<<< HEAD
     def show_other_account(self,target_account): 
         print(f"ชื่อบัญชีเราคือ: {self.name} ชื่อบัญชีคุณคือ {target_account.name}")
         
@@ -52,6 +63,8 @@ class BankAccount:
         target_account.deposit(1000)
         
         
+=======
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 # ------------------ ตัวอย่างการใช้งาน ------------------ #
 
 # สร้างบัญชีใหม่
@@ -59,11 +72,15 @@ account1 = BankAccount("Somsee RukGung", 1000)
 account1.show()  # ✅ แสดงชื่อบัญชี
 account1.showbalance()  # ✅ แสดงยอดเงินคงเหลือ
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 # ฝากและถอนเงิน
 account1.deposit(500)
 account1.withdraw(300)
 
+<<<<<<< HEAD
 
 
 # สร้างบัญชีใหม่ให้กับ SomKhuan Narak
@@ -73,10 +90,19 @@ account2.show()  # ✅ แสดงชื่อบัญชี
 #account2.withdraw(10000)
 
 account1.tranfer(account2)
+=======
+# สร้างบัญชีใหม่ให้กับ SomKhuan Narak
+account2 = BankAccount("SomKhuan Narak", 55000)
+account2.show()  # ✅ แสดงชื่อบัญชี
+account2.deposit(5000)
+account2.withdraw(10000)
+
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
 
 account2.showbalance()  # ✅ แสดงยอดเงินคงเหลือ
 
 
+<<<<<<< HEAD
 
  
 '''งงง
@@ -90,3 +116,7 @@ print(account1.name)
 account1.showbalance() 
 account2.showbalance()
 '''
+=======
+#print(account2.name)  
+#print(account2.__balance)  
+>>>>>>> d985458d0721adff89b07f5312a95c53ac062ed3
